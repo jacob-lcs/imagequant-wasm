@@ -2,7 +2,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './index.tsx',
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    template: './index.html'
+  })],
   mode: 'development',
   module: {
     rules: [
